@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cztery Kwadraty - Shadow RolePlay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('LOSSANTOS.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #34495e;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 1.2em;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.2s;
+            color: white; /* Ensure text is visible on the background */
+        }
+        .square a {
+            text-decoration: none;
+            color: #1abc9c;
+            font-weight: bold;
+        }
+        .square:hover {
+            transform: scale(1.05);
+        }
+        .square1 {
+            background: url('image1.jpg');
+        }
+        .square2 {
+            background: url('image2.jpg');
+        }
+        .square3 {
+            background: url('image3.jpg');
+        }
+        .square4 {
+            background: url('image4.jpg');
+        }
+        .square5 {
+            background: url('image5.jpg');
+        }
+        footer {
+            background-color: darkgray;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square square1">
+            <div>
+                <p>Podanie do frakcji LSPD</p>
+                <a href="https://lspdsk.netlify.app/podanie">APLIKUJ</a>
+            </div>
+        </div>
+        <div class="square square2">
+            <div>
+                <p>Podanie do Frakcji EMS</p>
+                <a href="podanieems.html">APLIKUJ</a>
+            </div>
+        </div>
+        <div class="square square3">
+            <div>
+                <p>Podanie do Frakcji Mechanika</p>
+                <a href="podanielsc.html">APLIKUJ</a>
+            </div>
+        </div>
+        <div class="square square4">
+            <div>
+                <p>Podanie na T-Supporta</p>
+                <a href="podanietrialsupport.html">APLIKUJ</a>
+            </div>
+        </div>
+        <div class="square square5">
+            <div>
+                <p>Podanie do nowej frakcji</p>
+                <a href="podanieNowaFrakcja.html">APLIKUJ</a>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; Wszelkie prawa zastrzeżone. By Skawusia</footer>
+</body>
+</html>
