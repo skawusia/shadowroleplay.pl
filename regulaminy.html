@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulaminy Serwera</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <header>
+        <h1>Regulaminy Serwera</h1>
+    </header>
+    <nav>
+        <a href="#ogolny">Ogólny Regulamin Serwera</a>
+        <a href="#crime">Regulamin Crime</a>
+    </nav>
+    <iframe id="ogolny" src="https://docs.google.com/document/d/107hYajo7zOShLvecLNUsCQcGZuUzPRQvETZG0mP1Lr4/edit"></iframe>
+    <iframe id="crime" src="https://docs.google.com/document/d/1tZxvOHU97R6p4_YqPl7S9I3TpOqgwmjOcv3FPXFQ-9M/edit"></iframe>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelectorAll('iframe').forEach(iframe => {
+                    iframe.style.display = 'none';
+                });
+                const target = document.querySelector(this.getAttribute('href'));
+                target.style.display = 'block';
+            });
+        });
+        // Domyślnie wyświetla pierwszy regulamin
+        document.querySelector('iframe#ogolny').style.display = 'block';
+        document.querySelector('iframe#crime').style.display = 'none';
+    </script>
+</body>
+</html>
